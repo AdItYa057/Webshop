@@ -6,7 +6,9 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @CucumberOptions(features = {"src/main/resources/features/DemoWebShop.feature"},
-glue = {"src/test/java/com/cts/StepDefinitions/StepDefinitions.java"})
+glue = {"com/cts/StepDefinitions"}, tags= {"@valid"}
+//,dryRun = true
+		)
 
 
 @RunWith(Cucumber.class)
